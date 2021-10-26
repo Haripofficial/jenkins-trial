@@ -5,8 +5,8 @@ pipeline {
            steps {
               
                 sh 'docker build -t profile-card-image-j:latest .' 
-                sh 'docker tag nginxtest haripofficial/profile-card-image-j:latest'
-                sh 'docker tag nginxtest haripofficial/profile-card-image-j:$BUILD_NUMBER'
+                sh 'docker tag profile-card-image-j haripofficial/profile-card-image-j:latest'
+                sh 'docker tag profile-card-image-j haripofficial/profile-card-image-j:$BUILD_NUMBER'
                
           }
         }
